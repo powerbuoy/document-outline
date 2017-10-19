@@ -11,7 +11,6 @@
 	'use strict';
 
 	$.fn.generateDocumentOutline = function (where) {
-		// Generates the outline
 		var generateOutline = function (headings) {
 			var html = '<ul>';
 

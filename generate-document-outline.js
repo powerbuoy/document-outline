@@ -18,7 +18,7 @@
 			headings.each(function (i) {
 				var heading = $(this);
 				var currLevel = heading[0].nodeName.substr(1);
-				var name = heading.text().replace(/ /g, '-').toLowerCase();
+				var name = heading.text().replace(/^[^a-z]+|[^\w:.-]+/gi, '').toLowerCase(); // https://stackoverflow.com/questions/9635625/javascript-regex-to-remove-illegal-characters-from-dom-id
 
 				heading.attr('id', 'jquery-generate-document-outline-' + name + '-'  + currLevel + '-' + i);
 

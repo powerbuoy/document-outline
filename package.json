@@ -1,0 +1,19 @@
+{
+  "name": "generate-document-outline",
+  "version": "1.0.0",
+  "description": "Generates a list of in page links based on the headings in a document",
+  "main": "generate-document-outline.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/powerbuoy/generate-document-outline.git"
+  },
+  "author": "Andreas Lagerkvist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/powerbuoy/generate-document-outline/issues"
+  },
+  "homepage": "https://github.com/powerbuoy/generate-document-outline#readme"
+}

@@ -10,9 +10,9 @@
 })(function ($) {
 	'use strict';
 
-	$.fn.generateDocumentOutline = function (where) {
+	$.fn.documentOutline = function (where) {
 		var generateOutline = function (headings) {
-			var html = '<ul>';
+			var html = '<ol>';
 
 			headings.each(function (i) {
 				var heading = $(this);
@@ -32,7 +32,7 @@
 				html += '</li>';
 			});
 
-			html += '</ul>';
+			html += '</ol>';
 
 			return html;
 		};

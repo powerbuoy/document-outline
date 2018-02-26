@@ -39,8 +39,11 @@
 
 		return this.each(function () {
 			var doc = $(this);
+			var headings = doc.find(':header');
 
-			$(where).append(generateOutline(doc.find(doc.find(':header')[0].nodeName)));
+			if (headings.length) {
+				$(where).append(generateOutline(doc.find(headings.[0].nodeName)));
+			}
 		});
 	};
 });

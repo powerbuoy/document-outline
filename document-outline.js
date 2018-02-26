@@ -42,7 +42,7 @@
 			var headings = doc.find(':header');
 
 			if (headings.length) {
-				$(where).append(generateOutline(doc.find(headings.[0].nodeName)));
+				$(where).append(generateOutline(doc.find(headings[0].nodeName)));
 			}
 		});
 	};
